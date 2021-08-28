@@ -42,6 +42,7 @@ io.use(async (socket, next) => {
 
 io.on("connection", (socket) => {
   console.log("Connected: " + socket.userId);
+  console.log('socket la', socket)
 
   socket.on("disconnect", () => {
     console.log("Disconnected: " + socket.userId);
